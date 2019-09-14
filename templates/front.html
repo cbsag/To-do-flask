@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+<center>
+<div class="container">
+<h1>
+    <center>
+             To Do List
+    </center>
+</h1>
+
+<form action="{{ url_for('add') }}" method="POST">
+<center>
+    <input type="text" name="data">
+    <input type="submit" value="Add Item">
+</form>
+<br>
+<br>
+<a href="{{ url_for('viewtasks') }}">View Tasks</a>  <p>  </p>
+<a href="{{ url_for('viewcompleted') }}">View Completed</a>
+
+</div>
+</center>
+</body>
+</html>
